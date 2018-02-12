@@ -1,0 +1,4 @@
+.instructions {
+  text-overflow: ellipsis;
+  width: 15em;
+}

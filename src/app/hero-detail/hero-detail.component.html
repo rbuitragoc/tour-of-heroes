@@ -1,0 +1,16 @@
+<div *ngIf="hero; else pleaseSelect">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div><span>name: </span>{{hero.name}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name">
+    </label>
+  </div>
+</div>
+
+<ng-template #pleaseSelect>
+  <div class="instructions">
+      Please select your hero from the list to see the details
+  </div>
+</ng-template>
