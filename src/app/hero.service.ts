@@ -10,7 +10,7 @@ import { HEROES } from './mock-heroes';
 @Injectable()
 export class HeroService {
 
-  private heroesUrl = 'http://localhost:8080/heroes';
+  private heroesUrl = 'http://localhost:8080/api/heroes';
 
   constructor(private http: HttpClient) { }
 
